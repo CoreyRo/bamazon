@@ -21,7 +21,7 @@
 
 ---
 ## Build Status
-[![Build Status](https://travis-ci.org/CoreyRo/Flashcard-Generator.png?branch=master)](https://travis-ci.org/CoreyRo/bamazon)
+[![Build Status](https://travis-ci.org/CoreyRo/bamazon.png?branch=master)](https://travis-ci.org/CoreyRo/bamazon)
 
 ---
 ## Code Style

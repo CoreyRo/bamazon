@@ -18,7 +18,8 @@
   "homepage": "https://github.com/CoreyRo/bamazon#readme",
   "dependencies": {
     "console.table": "^0.9.1",
+    "easy-table": "^1.1.0",
     "inquirer": "^3.2.3",
-    "mysql": "^2.14.1"
+    "mysql": "^2.14.1",
   }
 }

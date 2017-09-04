@@ -1,2 +1,4 @@
 node_modules
 .DS_Store
+dbSettings.js
+launch.json

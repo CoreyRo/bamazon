@@ -1,13 +1,17 @@
 # Bamazon
 
+## Status
+- ### WORK IN PROGRESS
+
+---
 <!-- TOC -->
 
 - [Bamazon](#bamazon)
+    - [Status](#status)
     - [Tech/Framework Used](#techframework-used)
     - [Features](#features)
     - [Installation](#installation)
     - [API Reference](#api-reference)
-    - [Tests](#tests)
     - [How to Use](#how-to-use)
     - [Credits](#credits)
     - [License & Copyright](#license-copyright)

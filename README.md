@@ -11,7 +11,7 @@
     - [API Reference](#api-reference)
     - [Tests](#tests)
     - [How to Use](#how-to-use)
-    - [License & Copyrite](#license-copyrite)
+    - [License & Copyright](#license-copyright)
 
 <!-- /TOC -->
 
@@ -69,7 +69,7 @@ In a Nodejs Terminal:
 - Enter "node bamazonSupervisor.js" for the Supervisor Level and follow the prompts.
 
 ---
-## License & Copyrite
+## License & Copyright
 © Corey Rodems 2017
 
 ---

@@ -119,8 +119,8 @@ var SQL = function(host, user, pass, port, db)
             function(err, res) 
             {
                 if(err) throw err;
-                console.log(query.sql)
-             con.end();
+                // console.log(query.sql)
+            //  con.end();
             })
         });
     };

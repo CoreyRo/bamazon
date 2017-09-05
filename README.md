@@ -14,7 +14,7 @@ Mock Retail Data Nodejs App
     - [Installation](#installation)
     - [API Reference](#api-reference)
     - [How to Use](#how-to-use)
-    - [Credits](#credits)
+    - [Contributors](#contributors)
     - [License & Copyright](#license-copyright)
 
 <!-- /TOC -->
@@ -70,7 +70,7 @@ In a Nodejs Terminal:
 
 ---
 
-## Credits
+## Contributors
 - Steven Simon, UCI Coding Bootcamp
     - sqlFile.js
 

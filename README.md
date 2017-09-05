@@ -8,18 +8,18 @@
     - [Tech/Framework Used](#techframework-used)
     - [Features](#features)
     - [Installation](#installation)
-        - [Source https://github.com/coreyro/bamazon.git](#source-httpsgithubcomcoreyrobamazongit)
     - [API Reference](#api-reference)
     - [Tests](#tests)
     - [How to Use](#how-to-use)
-    - [Contribute](#contribute)
-    - [License & Copywrite](#license-copywrite)
+    - [License & Copyrite](#license-copyrite)
 
 <!-- /TOC -->
 
 ---
 ## Tech/Framework Used
-Nodejs
+- [Nodejs](https://nodejs.org/en/ "Nodejs")
+- [MySQL Workbench](https://www.mysql.com/products/workbench/ "MySQL Workbench")
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code")
 
 ---
 ## Features
@@ -30,7 +30,7 @@ Data displayed at the user level will be displayed in a table in the Node termin
 ![alt-text](http://i.imgur.com/7a7QILC.png)
 
 - User Level
-    - can view inventory and "buy" mock products
+    - View inventory and "buy" mock products
 - Manager Level
     - Add inventory
     - View Low Inventory
@@ -40,7 +40,8 @@ Data displayed at the user level will be displayed in a table in the Node termin
 
 ---
 ## Installation
-### Source https://github.com/coreyro/bamazon.git
+Source https://github.com/coreyro/bamazon.git
+
 
 ---
 ## API Reference
@@ -61,14 +62,14 @@ Data displayed at the user level will be displayed in a table in the Node termin
 ---
 
 ## How to Use
-
+In a Nodejs Terminal:
+- Make sure you are in the right directory, then type "npm install --save" to install the required node modules.
+- Enter "node bamazonCustomer.js" for the Customer Level and follow the prompts.
+- Enter "node bamazonManager.js" for the Manager Level and follow the prompts.
+- Enter "node bamazonSupervisor.js" for the Supervisor Level and follow the prompts.
 
 ---
-## Contribute
-Corey Rodems
-
----
-## License & Copywrite
-Corey Rodems 2017
+## License & Copyrite
+© Corey Rodems 2017
 
 ---

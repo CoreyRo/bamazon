@@ -8,6 +8,12 @@ Author: Corey Rodems
 ## Status
 - #### WORK IN PROGRESS
 
+### To Do
+- [x] bamazonCustomer.js
+- [ ] bamazonManager.js
+- [ ] bamazonSupervisor.js
+
+
 ---
 <!-- TOC -->
 

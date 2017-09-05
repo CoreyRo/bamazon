@@ -1,7 +1,5 @@
 # Bamazon
 
-[![HitCount](https://hitt.herokuapp.com/CoreyRo/Flashcard-Generator.svg)](https://github.com/CoreyRo/bamazon)
-
 <!-- TOC -->
 
 - [Bamazon](#bamazon)
@@ -73,3 +71,4 @@ In a Nodejs Terminal:
 © Corey Rodems 2017
 
 ---
+[![HitCount](https://hitt.herokuapp.com/CoreyRo/Flashcard-Generator.svg)](https://github.com/CoreyRo/bamazon)

@@ -75,7 +75,7 @@ In a Nodejs Terminal:
 ---
 
 ## Contributons
-- Steven Simon, UCI Coding Bootcamp
+- [Steven Simon](https://github.com/theRealScoobaSteve "Steven Simon"), UCI Coding Bootcamp
     - sqlFile.js
 
 ---

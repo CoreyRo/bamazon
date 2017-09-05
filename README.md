@@ -2,7 +2,6 @@
 
 ## Status
 - ### WORK IN PROGRESS
-[![HitCount](https://hitt.herokuapp.com/CoreyRo/Flashcard-Generator.svg)](https://github.com/CoreyRo/bamazon)
 
 ---
 <!-- TOC -->
@@ -80,4 +79,4 @@ In a Nodejs Terminal:
 © Corey Rodems, UCI Coding Bootcamp 2017
 
 ---
-
+[![HitCount](https://hitt.herokuapp.com/CoreyRo/Flashcard-Generator.svg)](https://github.com/CoreyRo/bamazon)

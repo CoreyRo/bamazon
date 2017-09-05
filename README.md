@@ -9,6 +9,7 @@
     - [API Reference](#api-reference)
     - [Tests](#tests)
     - [How to Use](#how-to-use)
+    - [Credits](#credits)
     - [License & Copyright](#license-copyright)
 
 <!-- /TOC -->
@@ -67,8 +68,13 @@ In a Nodejs Terminal:
 - Enter "node bamazonSupervisor.js" for the Supervisor Level and follow the prompts.
 
 ---
+
+## Credits
+- Steven Simon, UCI Coding Bootcamp
+    - sqlFile.js
+
 ## License & Copyright
-© Corey Rodems 2017
+© Corey Rodems, UCI Coding Bootcamp 2017
 
 ---
 [![HitCount](https://hitt.herokuapp.com/CoreyRo/Flashcard-Generator.svg)](https://github.com/CoreyRo/bamazon)

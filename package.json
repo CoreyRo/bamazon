@@ -2,7 +2,7 @@
   "name": "bamazon",
   "version": "1.0.0",
   "description": "bamazon node app - UCI HW - CoreyRodems",
-  "main": "bamazonCustomer.js",
+  "main": "src/bamazonCustomer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,6 @@
     "console.table": "^0.9.1",
     "easy-table": "^1.1.0",
     "inquirer": "^3.2.3",
-    "mysql": "^2.14.1",
+    "mysql": "^2.14.1"
   }
 }

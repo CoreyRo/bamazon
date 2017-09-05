@@ -9,7 +9,11 @@ Author: Corey Rodems
 - #### WORK IN PROGRESS
 
 ### To Do
+- [x] MySQL Database
 - [x] bamazonCustomer.js
+    - [x] Display database inventory to terminal in a table
+    - [x] Chose database items with inquirer
+    - [x] Update database based on user input
 - [ ] bamazonManager.js
 - [ ] bamazonSupervisor.js
 

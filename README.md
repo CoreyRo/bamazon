@@ -10,6 +10,8 @@ Author: Corey Rodems
 
 ### To Do
 - [x] MySQL Database - **COMPLETE**
+    - [x] Create DB and dbConfig.js
+    - [x] Create tables and mock retal data
 - [x] bamazonCustomer.js - **COMPLETE**
     - [x] Display database inventory to terminal in a table
     - [x] Chose database items with inquirer

@@ -1,7 +1,8 @@
-# Bamazon 
+# Bamazon
+Mock Retail Data Nodejs App
 
 ## Status
-- ### WORK IN PROGRESS
+- #### WORK IN PROGRESS
 
 ---
 <!-- TOC -->
@@ -30,7 +31,7 @@ This is a Nodejs app that interacts with a MySQL database containing mock retail
 
 Data displayed at the user level will be displayed in a table in the Node terminal.
 
-![alt-text](http://i.imgur.com/7a7QILC.png)
+![table image](http://i.imgur.com/7a7QILC.png)
 
 - User Level
     - View inventory and "buy" mock products

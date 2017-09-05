@@ -1,6 +1,10 @@
 # Bamazon
 Mock Retail Data Nodejs App
 
+Author: Corey Rodems
+
+
+---
 ## Status
 - #### WORK IN PROGRESS
 
@@ -14,7 +18,7 @@ Mock Retail Data Nodejs App
     - [Installation](#installation)
     - [API Reference](#api-reference)
     - [How to Use](#how-to-use)
-    - [Contributors](#contributors)
+    - [Contributons](#contributons)
     - [License & Copyright](#license-copyright)
 
 <!-- /TOC -->
@@ -70,7 +74,7 @@ In a Nodejs Terminal:
 
 ---
 
-## Contributors
+## Contributons
 - Steven Simon, UCI Coding Bootcamp
     - sqlFile.js
 
@@ -80,4 +84,7 @@ In a Nodejs Terminal:
 © Corey Rodems, UCI Coding Bootcamp 2017
 
 ---
+- [GitHub Profile](https://www,github.com/coreyro)
+- Email crodems@uci.edu
+
 [![HitCount](https://hitt.herokuapp.com/CoreyRo/Flashcard-Generator.svg)](https://github.com/CoreyRo/bamazon)

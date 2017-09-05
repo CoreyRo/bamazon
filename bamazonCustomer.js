@@ -1,3 +1,7 @@
+//Bamazon Customer Level
+//By Corey Rodems
+//This file is the customer level of access to the bamazon_db.
+//Customer level allows viewing the database invetory and purchasing.
 var SQL = require("./sqlFile.js");
 var inquirer = require("inquirer");
 var consoleTable = require("console.table");
@@ -9,6 +13,7 @@ var dbConfig = require("./dbSettings");
 var database = new SQL(dbConfig.HOST, dbConfig.USER, dbConfig.PASS, dbConfig.PORT, dbConfig.DB);
 database.IsConnected();
 
+//Starts the store and displays the database inventory
 function startStore() {
     inquirer
         .prompt([{
@@ -33,6 +38,7 @@ function startStore() {
 
 }
 
+//Takes user input and compares that to the database item id's
 function buyItems(products) {
     inquirer
         .prompt([{
@@ -65,6 +71,8 @@ function buyItems(products) {
         });
 };
 
+//compares user buy qty to the database inventory.
+//if database inventory is greater than user buy qty, the database updates to reflect the purchases
 function itemQty(dbItem, products, buyID) {
     console.log("\nYou've picked " + dbItem.product_name + ".\nThere are " + dbItem.stock_qty + " left.\n")
     inquirer
@@ -89,28 +97,28 @@ function itemQty(dbItem, products, buyID) {
                                 stock_qty: updateQty
                             }, {
                                 item_id: dbItem.item_id
-							});
-							console.log("\nYou've successfully purchased " + buyQty + " of " + dbItem.product_name + ".\n");
-							inquirer.prompt([
-								{
-									type: "list",
-									message: "What would you like to do next?\n",
-									name: "nextAction",
-									choices: [
-										"Keep Shopping",
-										"Exit"
-									]
-								}
-							])
-							.then(function(answers){
-								console.log(answers.nextAction);
-								switch(answers.nextAction){
-									case "Keep Shopping": startStore();
-									break;
-									case "Exit": database.quitApp();
-									break;
-								}
-							})
+                            });
+                            console.log("\nYou've successfully purchased " + buyQty + " of " + dbItem.product_name + ".\n");
+                            inquirer.prompt([{
+                                    type: "list",
+                                    message: "What would you like to do next?\n",
+                                    name: "nextAction",
+                                    choices: [
+                                        "Keep Shopping",
+                                        "Exit"
+                                    ]
+                                }])
+                                .then(function(answers) {
+                                    console.log(answers.nextAction);
+                                    switch (answers.nextAction) {
+                                        case "Keep Shopping":
+                                            startStore();
+                                            break;
+                                        case "Exit":
+                                            database.quitApp();
+                                            break;
+                                    }
+                                })
                         }
                         else {
                             console.log("Not enough inventory! \nThere are only " + dbItem.stock_qty + " left.\n");
@@ -122,6 +130,7 @@ function itemQty(dbItem, products, buyID) {
 
 };
 
+//Uses the console.table node module to make a table in the terminal
 function makeTable(database) {
     database.Get("products")
         .then(function(products) {
@@ -139,4 +148,5 @@ function makeTable(database) {
             console.table(tableArr)
         })
 }
+//starts node app
 startStore();

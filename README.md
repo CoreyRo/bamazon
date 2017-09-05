@@ -54,10 +54,6 @@ Source https://github.com/coreyro/bamazon.git
 
 
 ---
-## Tests
-
-
----
 
 ## How to Use
 In a Nodejs Terminal:

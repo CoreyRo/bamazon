@@ -5,7 +5,9 @@
 var SQL = require("./sqlFile.js");
 var inquirer = require("inquirer");
 var consoleTable = require("console.table");
-
+var me = {
+    firstName: "Corey"
+}
 //Insert your MySQL config.
 //var db = new SQL(HOST,USER,PASS,PORT,DATABSE)
 //Replace dbConfig.X with your SQL settings

@@ -30,6 +30,7 @@ Author: Corey Rodems
 
 - [Bamazon](#bamazon)
     - [Status](#status)
+        - [To Do](#to-do)
     - [Tech/Framework Used](#techframework-used)
     - [Features](#features)
     - [Installation](#installation)
@@ -45,6 +46,7 @@ Author: Corey Rodems
 - [Nodejs](https://nodejs.org/en/ "Nodejs")
 - [MySQL Workbench](https://www.mysql.com/products/workbench/ "MySQL Workbench")
 - [Microsoft Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code")
+- [MAMP](https://www.mamp.info/en/downloads/ "MAMP")
 
 ---
 ## Features
@@ -83,11 +85,14 @@ Source https://github.com/coreyro/bamazon.git
 ---
 
 ## How to Use
-In a Nodejs Terminal:
 - Make sure you are in the right directory, then type "npm install --save" to install the required node modules.
-- Enter "node bamazonCustomer.js" for the Customer Level and follow the prompts.
-- Enter "node bamazonManager.js" for the Manager Level and follow the prompts.
-- Enter "node bamazonSupervisor.js" for the Supervisor Level and follow the prompts.
+- Use the script.sql file to create the bamazon_db and populate the tables in MySQL Wrokbench.
+- Use MAMP and make sure your local server is running.
+- On line 15 in bamazonCustomer.js, change the arguments to match your local database settings.
+- In a Nodejs Terminal:
+    - Enter "node bamazonCustomer.js" for the Customer Level and follow the prompts.
+    - Enter "node bamazonManager.js" for the Manager Level and follow the prompts.
+    - Enter "node bamazonSupervisor.js" for the Supervisor Level and follow the prompts.
 
 ---
 

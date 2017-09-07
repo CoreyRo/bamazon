@@ -5,15 +5,13 @@
 var SQL = require("./sqlFile.js");
 var inquirer = require("inquirer");
 var consoleTable = require("console.table");
-var me = {
-    firstName: "Corey"
-}
+
 //Insert your MySQL config.
 //var db = new SQL(HOST,USER,PASS,PORT,DATABSE)
 //Replace dbConfig.X with your SQL settings
 var dbConfig = require("./dbSettings");
 var database = new SQL(dbConfig.HOST, dbConfig.USER, dbConfig.PASS, dbConfig.PORT, dbConfig.DB);
-database.IsConnected();
+
 
 //Starts the store and displays the database inventory
 function startStore() {

@@ -93,7 +93,7 @@ var SQL = function(host, user, pass, port, db)
         });
     };
     //Select data from a specific cell
-    this.FilteredSelect = function(tableName, data)
+    this.FilteredSelect = function(tableName, tableVariables)
     {
         return new Promise(function(resolve, reject)
         {

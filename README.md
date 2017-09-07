@@ -16,11 +16,11 @@ Author: Corey Rodems
     - [x] Display database inventory to terminal in a table
     - [x] Chose database items with inquirer
     - [x] Update database based on user input
-- [ ] bamazonManager.js
-    - [ ] View database inventory levels
-    - [ ] Sort items by low inventory
-    - [ ] Add new database products
-    - [ ] Update inventory levels
+- [x] bamazonManager.js - **COMPLETE**
+    - [x] View database inventory levels
+    - [x] Sort items by low inventory
+    - [x] Add new database products
+    - [x] Update inventory levels
 - [ ] bamazonSupervisor.js
     - [ ] View total sales by department (new db table)
     - [ ] Able to create new departments

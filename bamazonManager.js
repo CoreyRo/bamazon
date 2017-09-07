@@ -12,6 +12,7 @@ var consoleTable = require("console.table");
 var dbConfig = require("./dbSettings");
 var database = new SQL(dbConfig.HOST, dbConfig.USER, dbConfig.PASS, dbConfig.PORT, dbConfig.DB);
 
+//main prompt
 function mgrMain(database) {
 	inquirer
 		.prompt([{
@@ -36,6 +37,7 @@ function mgrMain(database) {
 		});
 }
 
+//shows inventory
 function showInv(database) {
 	database.Get("products")
 		.then(function(products) {
@@ -74,6 +76,7 @@ function showInv(database) {
 
 }
 
+//sorts by low inventory
 function lowInv(database) {
 	inquirer.prompt([{
 		type: "input",
@@ -108,6 +111,7 @@ function lowInv(database) {
 	})
 }
 
+//gets the product item_id
 function invID(database) {
 	database.Get("products").then(function(products) {
 		inquirer
@@ -131,6 +135,7 @@ function invID(database) {
 
 }
 
+//gets the product item_id
 function addInv(id, database) {
 	database.Get("products").then(function(products) {
 		var dbItem = [];
@@ -144,6 +149,7 @@ function addInv(id, database) {
 	});
 };
 
+//Gets how many of selected item
 function howMany(dbItem, products, db) {
 	console.log("You've picked " + dbItem.product_name + ".\nThere are " + dbItem.stock_qty + " left.\n")
 	inquirer
@@ -187,6 +193,7 @@ function howMany(dbItem, products, db) {
 
 };
 
+//Adds new items to the databse
 function newItem(database) {
 	console.log("NewItem")
 	database.Get("products").then(function(products) {
@@ -241,5 +248,5 @@ function newItem(database) {
 	})
 
 }
-
+//runs app
 mgrMain(database);

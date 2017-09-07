@@ -36,6 +36,10 @@ Author: Corey Rodems
     - [Installation](#installation)
     - [API Reference](#api-reference)
     - [How to Use](#how-to-use)
+        - [In a Nodejs Terminal:](#in-a-nodejs-terminal)
+            - [Customer Level](#customer-level)
+            - [Manager Level](#manager-level)
+            - [Supervisor Level](#supervisor-level)
     - [Takeaways](#takeaways)
     - [Contributons](#contributons)
     - [License & Copyright](#license-copyright)
@@ -90,10 +94,27 @@ Source https://github.com/coreyro/bamazon.git
 - Use the script.sql file to create the bamazon_db and populate the tables in MySQL Wrokbench.
 - Use MAMP and make sure your local server is running.
 - On line 15 in bamazonCustomer.js, change the arguments to match your local database settings.
-- In a Nodejs Terminal:
-    - Enter "node bamazonCustomer.js" for the Customer Level and follow the prompts.
-    - Enter "node bamazonManager.js" for the Manager Level and follow the prompts.
-    - Enter "node bamazonSupervisor.js" for the Supervisor Level and follow the prompts.
+</br>
+
+### In a Nodejs Terminal:
+
+#### Customer Level
+    node bamazonCustomer.js
+ - Follow the prompts in the termianl to "buy" mock data
+
+![Customer Level](http://i.imgur.com/O2HJXnT.gif "customerLevel")
+<br>
+
+#### Manager Level
+    node bamazonManager.js
+ - Follow the prompts in the terminal to add new items or update inventory counts
+
+![Manager Level](http://i.imgur.com/4Ys3ZXp.gif "managerLevel")
+<br>
+
+#### Supervisor Level
+    node bamazonSupervisor.js
+ - Follow the prompts in the terminal to view sales data and create new departments
 
 ---
 

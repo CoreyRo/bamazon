@@ -11,3 +11,12 @@ var consoleTable = require("console.table");
 //Replace dbConfig.X with your SQL settings
 var dbConfig = require("./dbSettings");
 var database = new SQL(dbConfig.HOST, dbConfig.USER, dbConfig.PASS, dbConfig.PORT, dbConfig.DB);
+
+// SELECT 
+// products.dept_name, SUM(products.sales) AS total_sales
+// FROM
+// products
+//     LEFT JOIN
+// depts ON products.dept_name = depts.dept_name
+// GROUP BY dept_name
+// order by total_sales;;

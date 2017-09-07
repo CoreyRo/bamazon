@@ -82,6 +82,8 @@ function itemQty(dbItem, products, buyID) {
             name: "buyQty"
         }]).then(function(answers) {
             var buyQty = answers.buyQty;
+            var sales = dbItem.sales;
+            var price = dbItem.cust_price;
             inquirer
                 .prompt([{
                     type: "confirm",
@@ -92,9 +94,11 @@ function itemQty(dbItem, products, buyID) {
 
                     if (answers.confirm) {
                         var updateQty = parseInt(dbItem.stock_qty) - parseInt(buyQty);
+                        sales += (price * buyQty);
                         if (parseInt(buyQty) < parseInt(dbItem.stock_qty)) {
                             database.Update("products", {
-                                stock_qty: updateQty
+                                stock_qty: updateQty,
+                                sales: sales
                             }, {
                                 item_id: dbItem.item_id
                             });

@@ -10,13 +10,16 @@ CREATE TABLE products (
     dept_name VARCHAR(101) NOT NULL,
     cust_price FLOAT(11) NOT NULL,
     stock_qty INTEGER(10) NOT NULL,
+    sales float(11),
     PRIMARY KEY (item_id)
 );
 
 CREATE TABLE depts (
     dept_id INTEGER(11) AUTO_INCREMENT NOT NULL,
-    dept_name VARCHAR(101) NOT NULL,
-    over_head_costs FLOAT(10) NOT NULL,
+    dept_name VARCHAR(101) ,
+    over_head_costs FLOAT(10),
+    product_sales float(10),
+    total_profit float(10),
     PRIMARY KEY (dept_id)
 );
 
@@ -34,3 +37,11 @@ VALUES
 ('Patio Umbrella', 'Outdoor/Garden', 124.99, 175),
 ('Deck Chair', 'Outdoor/Garden', 34.99, 400);
 
+SELECT 
+    products.dept_name, SUM(products.sales) AS total_sales
+FROM
+    products
+        LEFT JOIN
+    depts ON products.dept_name = depts.dept_name
+GROUP BY dept_name
+order by total_sales;

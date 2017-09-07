@@ -1,7 +1,7 @@
-//Bamazon Customer Level
+//Bamazon Supervisor Level
 //By Corey Rodems
-//This file is the customer level of access to the bamazon_db.
-//Customer level allows viewing the database invetory and purchasing.
+//This file is the Supervisor level of access to the bamazon_db.
+//Supervisor level allows viewing of total sales and adding new departments.
 var SQL = require("./sqlFile.js");
 var inquirer = require("inquirer");
 var consoleTable = require("console.table");

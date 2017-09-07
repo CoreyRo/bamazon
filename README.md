@@ -36,6 +36,7 @@ Author: Corey Rodems
     - [Installation](#installation)
     - [API Reference](#api-reference)
     - [How to Use](#how-to-use)
+    - [Takeaways](#takeaways)
     - [Contributons](#contributons)
     - [License & Copyright](#license-copyright)
 
@@ -94,6 +95,14 @@ Source https://github.com/coreyro/bamazon.git
     - Enter "node bamazonManager.js" for the Manager Level and follow the prompts.
     - Enter "node bamazonSupervisor.js" for the Supervisor Level and follow the prompts.
 
+---
+
+## Takeaways 
+
+I am still very green when it comes to writing code and interacting with Nodejs and MySQL so I had a lot of challenges working out how to code this.
+I'm pretty sure I can refactor this at some point and make it a lot smaller and more optimized but I need more time to work it out. 
+I plan to just have one JS file that you run in node that accesses the other JS files and serves them up with inquirer so that you don't
+have to type "node bamazon<Whatever>.js" to run different modes. I also want to add more error checking for inputs.
 ---
 
 ## Contributons

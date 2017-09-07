@@ -1,7 +1,7 @@
-//Bamazon Customer Level
+//Bamazon Manager Level
 //By Corey Rodems
-//This file is the customer level of access to the bamazon_db.
-//Customer level allows viewing the database invetory and purchasing.
+//This file is the manager level of access to the bamazon_db.
+//Manager level allows adding new items and updating inventory counts.
 var SQL = require("./sqlFile.js");
 var inquirer = require("inquirer");
 var consoleTable = require("console.table");
